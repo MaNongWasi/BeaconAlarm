@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+   <ImageView
+       android:id="@+id/isen_logo"
+       android:layout_width="250sp"
+       android:layout_height="250dp"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="30dp"
+       android:src="@drawable/icon"/>
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/isen_logo"
+        android:layout_marginTop="20dp"
+        android:text="Home Security"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/method_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title_tv"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:text="Choose connect method"
+        />
+
+    <ImageView
+        android:id="@+id/wifi_im"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/method_tv"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/wifi"/>
+
+    <ImageView
+        android:id="@+id/bt_im"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/method_tv"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/bluetooth"/>
+
+</RelativeLayout>
